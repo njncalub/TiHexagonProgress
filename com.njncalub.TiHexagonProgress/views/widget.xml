@@ -18,6 +18,5 @@
         <View id="side6" class="side">
             <View id="progress6" class="progress"></View>
         </View>
-        <Label id="lblTime" class="time">60</Label>
     </View>
 </Alloy>

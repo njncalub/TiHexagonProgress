@@ -1,16 +1,24 @@
 /*
     t: hexagon thickness
     l: length of each side
-    d: calculated width of hexagon based on l
+    w: calculated width of hexagon based on l
     h: calculated height of hexagon based on l
+    d: total duration
 */
 
 var CONFIG = arguments[0] || {};
 
 $.t = CONFIG.t || 10;
 $.l = CONFIG.l || 40;
-$.d = $.l * 2;
+$.w = $.l * 2;
 $.h = $.l * Math.sqrt(3);
+$.d = CONFIG.d || 100;
+if (CONFIG.d) {
+    $.lblTotal = Ti.UI.createLabel({
+        text: $.d
+    });
+    $.widget.add($.lblTotal);
+}
 
 $.init = function() {
     // for iOS only
@@ -23,19 +31,19 @@ $.init = function() {
 
     // side1
     $.side1.top  = 0;
-    $.side1.left = $.d * 0.25;
+    $.side1.left = $.w * 0.25;
     // side2
     $.side2.top  = 0;
-    $.side2.left = $.d * 0.75;
+    $.side2.left = $.w * 0.75;
     // side3
     $.side3.top  = $.h * 0.5;
-    $.side3.left = $.d;
+    $.side3.left = $.w;
     // side4
     $.side4.top  = $.h;
-    $.side4.left = $.d * 0.75;
+    $.side4.left = $.w * 0.75;
     // side5
     $.side5.top  = $.h;
-    $.side5.left = $.d * 0.25;
+    $.side5.left = $.w * 0.25;
     // side6
     $.side6.top  = $.h * 0.5;
     $.side6.left = 0;
