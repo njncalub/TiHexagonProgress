@@ -1,0 +1,13 @@
+{
+    "id": "com.njncalub.TiHexagonProgress",
+    "name": "com.njncalub.TiHexagonProgress",
+    "description": "A hexagonal progress bar for Titanium.",
+    "author": "Nap Joseph Calub",
+    "version": "0.1",
+    "copyright": "Copyright 2014 Nap Joseph Calub",
+    "license": "MIT",
+    "min-alloy-version": "1.1",
+    "min-titanium-version": "3.0",
+    "tags": "",
+    "platforms": "ios"
+}

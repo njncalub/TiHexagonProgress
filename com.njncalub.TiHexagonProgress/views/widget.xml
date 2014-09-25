@@ -1,0 +1,23 @@
+<Alloy>
+    <View id="widget">
+        <View id="side1" class="side">
+            <View id="progress1" class="progress"></View>
+        </View>
+        <View id="side2" class="side">
+            <View id="progress2" class="progress"></View>
+        </View>
+        <View id="side3" class="side">
+            <View id="progress3" class="progress"></View>
+        </View>
+        <View id="side4" class="side">
+            <View id="progress4" class="progress"></View>
+        </View>
+        <View id="side5" class="side">
+            <View id="progress5" class="progress"></View>
+        </View>
+        <View id="side6" class="side">
+            <View id="progress6" class="progress"></View>
+        </View>
+        <Label id="lblTime" class="time">60</Label>
+    </View>
+</Alloy>
